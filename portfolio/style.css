@@ -1,0 +1,168 @@
+/*la navbar et tout ce qu'il y a dedans*/
+header {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #333;
+	z-index: 2;
+}
+
+/*pour l'animation jscript*/
+.navbar__link {
+	cursor: pointer;
+}
+
+/*la nav bar*/
+nav {
+	display: flex;
+	justify-content: center;
+	background-color: #333;
+}
+
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	nav li {
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+		nav li a {
+			display: block;
+			color: #fff;
+			font-size: 20px;
+			text-decoration: none;
+			padding: 10px;
+			transition: all ease-in-out 0.3s;
+		}
+
+		nav li a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+/*toute les sections du site*/
+section {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	margin-top: 20px;
+	font-size: 50px;
+}
+
+	#about {
+		background-color: white;
+	}
+		/*mise en page des éléments du about mais aussi des focus sur les projets*/
+		.texte-centre-droite {
+  			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translate(0, -50%);
+			text-align: center;
+			width: 50%;
+			font-size: 18px;
+			z-index: 1;
+			}
+
+		.image-centre-gauche {
+			position: absolute;
+			z-index: 1;
+			top: 65%;
+			left: 0;
+			transform: translate(0, -50%);
+			max-width: 33%;
+			margin-left: 8%;
+			}
+
+
+	#projects {
+		background-color: #333;
+		margin-left: -8px;
+		width: 102%;
+		
+	}
+
+		#projects h1 {
+			color: #fff;
+			margin-left: 8px;
+		}
+
+		/*bien organiser les éléments dans la secrion*/
+		#pro {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 300px;
+			width: 100%;
+			margin-right: 250px;
+		  }
+		  
+		  .partie {
+			width: 32%;
+			text-align: center;
+		  }
+		  
+		  img {
+			width: 100%;
+			height: auto;
+		  }
+		  
+		  h2 {
+			margin-top: 10px;
+			font-size: 18px;
+			color: #fff;
+		  }
+		  
+		  .bouton {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 10px 20px;
+			color: #fff;
+			font-size: 18px;
+			border: none;
+			border-radius: 5px;
+			text-decoration: none;
+			transition: background-color 0.2s;
+		  }
+		  
+		  .bouton:hover {
+			background-color: #fff;
+			color: #333;
+		  }
+
+	#contact {
+		background-color: white;
+	}
+
+	#RS {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 350px;
+		margin-right: 200px;
+	  }
+	  
+	  #RS div {
+		flex-basis: 30%;
+	  }
+	  
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 50px 0;
+	text-align: center;
+}
+	
+		footer p {
+		font-size: 18px;
+	}
